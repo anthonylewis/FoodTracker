@@ -105,7 +105,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxs-uY-NV4">
                                             <rect key="frame" x="97" y="8" width="495" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qws-Ah-uX7" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
@@ -118,6 +118,7 @@
                                     <outlet property="nameLabel" destination="hxs-uY-NV4" id="Fe9-ia-96X"/>
                                     <outlet property="photoImageView" destination="89K-ey-gy0" id="hU0-7z-AKp"/>
                                     <outlet property="ratingControl" destination="qws-Ah-uX7" id="x2k-bW-w1O"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="dKY-X9-J87"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -172,10 +173,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uq8-h5-eu2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1086" y="387"/>
+            <point key="canvasLocation" x="1178" y="791"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dKY-X9-J87"/>
+    </inferredMetricsTieBreakers>
 </document>
